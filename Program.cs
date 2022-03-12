@@ -21,8 +21,11 @@ namespace LinkedListPgm
             //list.RemoveLastElement();
             //Console.WriteLine("The list after removing last Element is : ");
             //list.Display();
-            Console.WriteLine("Serach elment");
-            list.Search(30);
+            //Console.WriteLine("Serach elment");
+            //list.Search(30);
+            //list.Display();
+            list.InsertAtParticularPosition(3, 40);
+            Console.WriteLine("The list after inserting 40 is :  ");
             list.Display();
         }
     }

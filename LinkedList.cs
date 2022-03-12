@@ -9,7 +9,7 @@ namespace LinkedListPgm
     public class LinkedList
     {
         internal Node head;
-        internal void Add(int data)
+        internal void Append(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -25,7 +25,7 @@ namespace LinkedListPgm
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} inserted into linked list", node, data);
+            //Console.WriteLine("{0} inserted into linked list", node, data);
         }
         internal void Display()
         {
@@ -37,7 +37,7 @@ namespace LinkedListPgm
             }
             while (temp != null)
             {
-                Console.Write(temp.data + " ");
+                Console.WriteLine(temp.data);
                 temp = temp.next;
             }
         }

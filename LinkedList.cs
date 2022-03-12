@@ -9,7 +9,7 @@ namespace LinkedListPgm
     public class LinkedList
     {
         internal Node head;
-        internal void Append(int data)
+        internal void Add(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -27,6 +27,31 @@ namespace LinkedListPgm
             }
             //Console.WriteLine("{0} inserted into linked list", node, data);
         }
+
+        public void InsertAtParticularPosition(int position, int data)
+        {
+            Node node = new Node(data);
+            if (position < 1)
+                Console.WriteLine("Invalid Position");
+            else if (position == 1)
+            {
+                node.next = head;
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+
+                while (position > 2)
+                {
+                    temp = temp.next;
+                    position--;
+                }
+                node.next = temp.next;
+                temp.next = node;
+            }
+        }
+
         internal void Display()
         {
             Node temp = this.head;

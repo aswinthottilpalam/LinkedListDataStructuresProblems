@@ -15,6 +15,9 @@ namespace LinkedListPgm
             list.InsertAtParticularPosition(2, 30);
             Console.WriteLine("The list after inserting 30 is: ");
             list.Display();
+            list.RemoveFirstElement();
+            Console.WriteLine("The list after removing first element is : ");
+            list.Display();
         }
     }
 }

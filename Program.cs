@@ -8,9 +8,12 @@ namespace LinkedListPgm
         {
             Console.WriteLine("Linked List Operations");
             LinkedList list = new LinkedList();
-            list.Append(56);
-            list.Append(30);
-            list.Append(70);
+            list.Add(56);
+            list.Add(70);
+            Console.WriteLine("The list before inserting 30 is: ");
+            list.Display();
+            list.InsertAtParticularPosition(2, 30);
+            Console.WriteLine("The list after inserting 30 is: ");
             list.Display();
         }
     }

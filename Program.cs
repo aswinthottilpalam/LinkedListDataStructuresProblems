@@ -18,8 +18,11 @@ namespace LinkedListPgm
             //list.RemoveFirstElement();
             //Console.WriteLine("The list after removing first element is : ");
             //list.Display();
-            list.RemoveLastElement();
-            Console.WriteLine("The list after removing last Element is : ");
+            //list.RemoveLastElement();
+            //Console.WriteLine("The list after removing last Element is : ");
+            //list.Display();
+            Console.WriteLine("Serach elment");
+            list.Search(30);
             list.Display();
         }
     }

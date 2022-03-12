@@ -77,6 +77,20 @@ namespace LinkedListPgm
             return head;
         }
 
+        // Search an element
+        public bool Search(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return true;
+                }
+                this.head = this.head.next;
+            }
+            return false;
+        }
+
         internal void Display()
         {
             Node temp = this.head;
